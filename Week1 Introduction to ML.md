@@ -29,7 +29,7 @@
 
 #### Cost function formula
 - We minimize cost function to find $w, b$, so that $\hat{y}^i$ is close to $y^i$ for all $(x^i, y^i)$. 
-- squared error cost function 
+- Squared error cost function 
 
 $$
 J(w, b) = \frac{1}{2m}\sum_{i=1}^{m}(\hat{y}^i - y^i)^2 = \frac{1}{2m}\sum_{i=1}^{m}(f_{w,b}(x^i) - y^i)^2,
