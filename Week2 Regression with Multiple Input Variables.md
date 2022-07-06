@@ -1,56 +1,67 @@
 # Regression with Multiple Input Variables
 ## Multiple Linear Regression
 #### Multiple features
-![multiple_features_notation](images/multiple_features_notation.png)
-![mlr_model](images/mlr_model.png)
+<img src="images/multiple_features_notation.png" with="250" height="250">
+<img src="images/mlr_model.png" with="250" height="250">
 
 #### Vectorization
 neat and faster
-![vectorization1](images/vectorization1.png)
-![vectorization2](images/vectorization2.png)
-![vectorization3](images/vectorization3.png)
+<img src="images/vectorization1.png" with="250" height="250">
+<img src="images/vectorization2.png" with="250" height="250">
+<img src="images/vectorization3.png" with="250" height="250">
+
 #### Optional lab: Python, NumPy and vectorization
 #### Gradient descent for multiple linear regression
-![vctorized_gd1](images/vctorized_gd1.png)
-![gd_mlr](images/gd_mlr.png)
-![normal_eq](images/normal_eq.png)
+<img src="images/vctorized_gd1.png" with="250" height="250">
+<img src="images/gd_mlr.png" with="250" height="250">
+<img src="images/normal_eq.png" with="250" height="250">
 
 #### Optional Lab: Multiple linear regression
 ## Gradient Descent in Practice
 #### Feature scaling
 A good model will assign small value to $w$ when the value of $x_i$ is large
-![feature_parameter_scale](images/feature_parameter_scale.png)
+<img src="images/feature_parameter_scale.png" with="250" height="250">
+
 It takes small change in $w_1$ to have a large impact on y given the range of value of $x_1$ is large and vise versa.
-![feature_parameter_size](images/feature_parameter_size.png)
+<img src="images/feature_parameter_size.png" with="250" height="250">
+
 When the contour plot is skinny, gradient descent will bounce back and forth and therefore takes a long time to reach the minimum.
-![feature_size_gd](images/feature_size_gd.png)
+<img src="images/feature_size_gd.png" with="250" height="250">
+
 Feature scaling approach 1: max normalization
-![feature_scaling_max_normalization](images/feature_scaling_max_normalization.png)
+<img src="images/feature_scaling_max_normalization.png" with="250" height="250">
+
 Feature scaling approach 2: mean normalization
-![feature_scaling_mean_normalization](images/feature_scaling_mean_normalization.png)
+<img src="images/feature_scaling_mean_normalization.png" with="250" height="250">
+
 Feature scaling approach 3: z-score normalization
-![feature_scaling_zscore](images/feature_scaling_zscore.png)
+<img src="images/feature_scaling_zscore.png" with="250" height="250">
+
 When do we need to do feature scaling. There is no harm in doing feature scaling.
-![feature_scaling](images/feature_scaling.png)
+
+<img src="images/feature_scaling.png" with="250" height="250">
+
 #### Checking gradient descent for convergence
 - Learning curve: Adjust the learning rate. The number of iterations can varies a lot.
 - Automatic convergence test: hard to choose an appropriate $\epsilon$ 
-![check_convergence](images/check_convergence.png)
+<img src="images/check_convergence.png" with="250" height="250">
 
 #### Choosing the learning rate
-![choose_learning_rate](images/choose_learning_rate.png)
+<img src="images/choose_learning_rate.png" with="250" height="250">
+
 - Signs of problem: the learning curve fluctuate or keep increasing
 - Potential problems, detection, and correction:
 	- There is bugs in the code: test use a small enough $\alpha$ and see whether $J(\vec{w}, b)$  decrease on every iteration
 	- Learning rate is too large: try a set of $\alpha$ for a handful of iterations and choose the $\alpha$ that seems to decrese the $J(\vec{w}, b)$ most rapidly.
-![choose_learning_rate2](images/choose_learning_rate2.png)
+<img src="images/choose_learning_rate2.png" with="250" height="250">
 
 #### Optional Lab: Feature scaling and learning rate
 #### Feature engineering
-![feature_engineering](images/feature_engineering.png)
+<img src="images/feature_engineering.png" with="250" height="250">
+
 #### Polynomial regression
 - It is important to do feature scaling in polynomial regression
-![polynomial_regression](images/polynomial_regression.png)
+<img src="images/polynomial_regression.png" with="250" height="250">
 
 #### Optional Lab: Feature engineering and Polynomial regression
 #### Optional Lab: Linear regression with scikit-learn
